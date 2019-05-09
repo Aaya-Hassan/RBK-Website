@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar style="padding:13px">
+    <button ion-button menuToggle style="margin-top: -1em;">
+        <ion-icon name="menu" style="color:#BFBFBF;font-size:50px;"></ion-icon>
+    </button>  
+    <ion-title><img src="../../assets/imgs/logo.png" style="height: 30px;"></ion-title>
+    <ion-buttons end>
+        <ion-icon name="globe-outline" style="color:#BFBFBF;font-size:50px" end></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+<ion-content>
+    <div class="ionIcon">
+        <ion-icon name="laptop" (click)="presentAlert1()"></ion-icon>
+        <br/>
+        <ion-icon name="time-outline" style="margin-left: 13px;" (click)="presentAlert2()"></ion-icon>
+        <br/>
+        <ion-icon ios="ios-trophy" md="md-trophy" style="margin-left: 13px;" (click)="presentAlert3()"></ion-icon>
+        <br/>
+        <ion-icon name="construct" (click)="presentAlert4()"></ion-icon>
+        <br/>
+        <ion-icon name="heart-outline" (click)="presentAlert5()"></ion-icon>
+        <br/>
+        <ion-icon name="briefcase" style="margin-left: 13px;" (click)="itemTapped($event, item)"></ion-icon>
+        <br/>
+        <ion-icon name="restaurant" style="margin-left: 35px;" (click)="presentAlert6()"></ion-icon>
+        <br/>
+        <ion-icon name="bus" style="margin-left: 30px;" (click)="presentAlert7()"></ion-icon>
+        <br/>
+        <ion-icon name="pulse-outline" (click)="presentAlert8()"></ion-icon>
+        <br/>
+        <ion-icon name="cash-outline" (click)="presentAlert9()"></ion-icon>
+        <br/>
+        <ion-icon name="pin" style="margin-left: 30px;" (click) = "openUrl()"></ion-icon>
+        <ion-icon name="help" style="margin-left: 55px;font-weight: bold;"></ion-icon>
+    </div>
+</ion-content>
+

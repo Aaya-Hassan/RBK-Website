@@ -1,0 +1,19 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Location</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-icon name="home" (click)="backTohomepage()" style="color:#BFBFBF;font-size: 45px;" menuToggle></ion-icon>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
