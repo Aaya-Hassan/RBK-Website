@@ -19,9 +19,12 @@ export class HelloIonicPage {
 
   
   openUrl() {
-    // let browser = this.iab.create('https://goo.gl/maps/2yaKz2CjR8esWWDb6/','_self',{location:'no'});
-    window.open('https://goo.gl/maps/2yaKz2CjR8esWWDb6/','_blank')
+    window.open('https://goo.gl/maps/2yaKz2CjR8esWWDb6/','_blank');
   }   
+
+  openDocs(){
+    window.open('https://docs.google.com/document/d/1-d69iEjSxF0y9Qj4AmgYMXa8OweRHYYV3oxmUBct_4w/edit','_blank');
+  }
   
   openPage(page) {
     page = this.pages[0]
